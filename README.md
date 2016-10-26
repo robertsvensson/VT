@@ -14,6 +14,8 @@ con = vt.ConnectionHandle(apiKey)
 
 ##   Get Virustotal.com report in JSON format for a certain URL.
 print con.getURLreport('http://www.dn.se')
+Output:
+{"permalink": "https://www.virustotal.com/url/400599c00ee2ddfd4b4d3cd00345b19128b88706292a92bf53f4f4ef618bf2f7/analysis/1477488602/", "resource": "http://www.dn.se/", "url":...and so on
 
 ##   Get Virustotal.com report  JSON format for a file's SHA256 hash.
 print con.getSHA256report('ef794b9a3b72ae5524e17ecccf330eb16f2cc74f3e7fe7cb2667acefdea4b3a3')
