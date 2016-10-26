@@ -22,3 +22,10 @@ print con.getSHA256report('ef794b9a3b72ae5524e17ecccf330eb16f2cc74f3e7fe7cb2667a
 
 Output:
 {"scans": {"Bkav": {"detected": true, "version": "1.3.0.8455", "result": "W32.Cloda4b.Trojan.4a55", "update": "20161026"}, "MicroWorld-eScan": {"detected": true, "version": "12.0.250.0", "result": "Gen:Trojan.Heur.fmKfXCDIycnj", "update": "20161026"}, "nProtect": {"detected": false, "version": "2016-10-26.02", "result": null, "update": "20161026"}, "CMC": {"detected": false, "version": "1.1.0.977", "result": null, "update": "20161026"}, "CAT-QuickHeal"........and so on
+
+##  Send file to Virustotal.com and get the result in JSON format.
+##   The method argument 'evil.file' is the path and file name of the file to be scanned.
+print con.sendFileToVirusTotal('evil.file')
+
+Output:
+{"scan_id": "bbd05cf6097ac9b1f89ea29d2542c1b7b67ee46848393895f5a9e43fa1f621e5-1477490689", "sha1": "1e5f8def40bb0cb0f7156b9c2bab9efb49cfb699", "resource": "bbd05cf6097ac9b1f89ea29d2542c1b7b67ee46848393895f5a9e43fa1f621e5", "response_code": 1, "sha256": "bbd05cf6097ac9b1f89ea29d2542c1b7b67ee46848393895f5a9e43fa1f621e5",.....and so on
