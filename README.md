@@ -24,7 +24,7 @@ Output:
 {"scans": {"Bkav": {"detected": true, "version": "1.3.0.8455", "result": "W32.Cloda4b.Trojan.4a55", "update": "20161026"}, "MicroWorld-eScan": {"detected": true, "version": "12.0.250.0", "result": "Gen:Trojan.Heur.fmKfXCDIycnj", "update": "20161026"}, "nProtect": {"detected": false, "version": "2016-10-26.02", "result": null, "update": "20161026"}, "CMC": {"detected": false, "version": "1.1.0.977", "result": null, "update": "20161026"}, "CAT-QuickHeal"........and so on
 
 ##  Send file to Virustotal.com and get the result in JSON format.
-##   The method argument 'evil.file' is the path and file name of the file to be scanned.
+The method argument 'evil.file' is the path and file name of the file to be scanned.
 print con.sendFileToVirusTotal('evil.file')
 
 Output:
